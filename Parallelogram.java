@@ -10,7 +10,6 @@ class Parallelogram extends Shape  {
     public String getName() {
         return name;
     }
-
     @Override
     public String getColor() {
         return color;
