@@ -1,6 +1,6 @@
 package company;
 
-class Circle extends  Shape{
+class Circle extends Shape{
 private String name, color;
 
     public Circle(String name, String color) {
