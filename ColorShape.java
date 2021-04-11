@@ -1,6 +1,6 @@
 package company;
 
- interface ColorShape {
+ interface  ColorShape {
     
      String getColor();
 }
