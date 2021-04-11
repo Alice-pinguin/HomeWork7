@@ -1,8 +1,7 @@
 package company;
 
-class Circle extends  Shape {
-    private String name;
-    private String color;
+class Circle extends  Shape{
+private String name, color;
 
     public Circle(String name, String color) {
         this.name = name;
@@ -13,6 +12,7 @@ class Circle extends  Shape {
     public String getName() {
         return name;
     }
+
     @Override
     public String getColor() {
         return color;
