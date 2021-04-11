@@ -1,24 +1,34 @@
 package company;
 
-class NamePrinter {
+public class NamePrinter {
+   public void printName(Shape shape) {
+     System.out.println(shape.getName());
+   }
 
+   public void printColor(Shape shape) {
+     System.out.println(shape.getColor());
+   }
 
-    public static void main(String[] args) {
+   public static void main(String[] args) {
 
-        Shape circle = new Circle("Circle", "grey");
-        Shape quad = new Quad("Quad", "green");
-        Shape rhombus = new Rhombus("Rhombus", "blue");
-        Shape parallelogram = new Parallelogram("Parallelogram", "yellow");
-        Shape rectangle = new Rectangle("Rectangle", "black");
-        System.out.println(circle.getName()+
-                ","+quad.getName()+","+rhombus.getName()+","+parallelogram.getName()+
-                ","+rectangle.getName());
-
-        System.out.println(circle.getColor()+
-                ","+quad.getColor()+","+rhombus.getColor()+","+parallelogram.getColor()+
-                ","+rectangle.getColor());
-    }
-}
+     Circle circle = new Circle("Circle", "grey");
+     Quad quad = new Quad("Quad", "green");
+     Rhombus rhombus = new Rhombus("Rhombus", "blue");
+     Parallelogram parallelogram = new Parallelogram("Parallelogram", "yellow");
+     Rectangle rectangle = new Rectangle("Rectangle", "black");
+     NamePrinter namePrinter = new NamePrinter();
+     namePrinter.printColor(circle);
+     namePrinter.printName(circle);
+     namePrinter.printColor(quad);
+     namePrinter.printName(quad);
+     namePrinter.printColor(rhombus);
+     namePrinter.printName(rhombus);
+     namePrinter.printColor(parallelogram);
+     namePrinter.printName(parallelogram);
+     namePrinter.printColor(rectangle);
+     namePrinter.printName(rectangle);
+   }
+ }
 
 
 
